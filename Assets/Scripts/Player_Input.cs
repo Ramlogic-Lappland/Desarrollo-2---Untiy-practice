@@ -2,13 +2,13 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Input_X : MonoBehaviour
+public class Player_Input : MonoBehaviour
 {
     [SerializeField] private InputActionReference moveAction;
     [SerializeField] private InputActionReference jumpAction;
     [SerializeField] private float speed = 20;
     [SerializeField] private float jumpForce = 10;
-    [SerializeField] private Rigidbody rigidbody;
+    [SerializeField] private new Rigidbody rigidbody;
     private bool _isJumpRequested; 
     
     private Vector2 _moveInput;
